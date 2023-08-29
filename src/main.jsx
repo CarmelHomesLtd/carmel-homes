@@ -12,12 +12,14 @@ import WhatIsRentToOwn from "./pages/WhatIsRentToOwn";
 import PartnerWithUs from "./pages/PartnerWithUs";
 import Faq from "./pages/Faq";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import _404 from "./pages/404";
 import "./index.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <_404 />,
     children: [
       {
         index: true,
@@ -49,10 +51,20 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+]
+);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+if (document.getElementById("root").hasChildNodes()) {
+  rootElement.hydrate(
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>,
+  );
+} else {
+  rootElement.render(
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>,
+  );
+}
