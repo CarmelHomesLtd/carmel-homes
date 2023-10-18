@@ -18,14 +18,7 @@ function Homepage() {
         <meta name="description" content="Home ownership in a few clicks. Get in touch tell us your story, so that we can get an overview of your challenges and support you." />
         {/*Google tag (gtag.js)*/}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7M87W0RE"></script>
-        <script>
-          {
-            const dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)}
-            gtag('js', new Date());
-            gtag('config', 'G-YT7M87W0RE');
-          }
-        </script>
+        <script src="global/gtag.js"></script>
       </Helmet>
       <Hero />
       <HowWeWork />
