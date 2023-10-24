@@ -9,9 +9,9 @@ function Faq() {
       <Helmet>
         <title>Carmel Homes Ltd - FAQs</title>
         <meta name="description" content="Find some commonly asked questions to give you more information about the Rent to Own Home Ownership Program." />
-        {/*Google tag (gtag.js)*/}
+        {/*Google tag (gtag.js)
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7M87W0RE"></script>
-        <script src="global/gtag.js"></script>
+        <script src="/public/gtag.js"></script>*/}
       </Helmet>
       <h1 className="h-0 opacity-0">FAQs</h1>
       <Hero />

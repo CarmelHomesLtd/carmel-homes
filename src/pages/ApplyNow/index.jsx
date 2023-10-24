@@ -10,9 +10,9 @@ function ApplyNow() {
       <Helmet>
         <title>Carmel Homes Ltd - Apply Now</title>
         <meta name="description" content="Apply Now · Response in 24 hours · No commitment · No effect on your credit card rating." />
-        {/*Google tag (gtag.js)*/}
+        {/*Google tag (gtag.js)
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7M87W0RE"></script>
-        <script src="global/gtag.js"></script>
+        <script src="/public/gtag.js"></script>*/}
       </Helmet>
       <h1 className="h-0 opacity-0">Apply Now</h1>
       <Benefits />
