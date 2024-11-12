@@ -73,7 +73,8 @@ function Navbar() {
               ["Rent to Own?", "/what-is-rent-to-own"],
               ["About Us", "/about-us"],
               ["Faq", "/faq"],
-              ["Apply Now", "/apply-now"],
+              // ["Apply Now", "/apply-now"],
+              ["Off Market Deals", "/off-market-deals"],
               ["Partner", "/partner-with-us"],
             ].map((link, id) => (
               <NavLink
@@ -110,11 +111,11 @@ function Navbar() {
           </Button>
         </div>
 
-        <Link to="/apply-now">
+        {/* <Link to="/apply-now">
           <Button theme="primary" isNavbarButton={true}>
             Apply Now
           </Button>
-        </Link>
+        </Link> */}
       </div>
 
       <dialog ref={contactUsRef} className="backdrop:bg-slate-900/40 w-[min(70vw,55rem)] absolute px-6 py-12 md:p-16 rounded-md">

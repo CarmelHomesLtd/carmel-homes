@@ -5,12 +5,17 @@ import { Helmet } from "react-helmet";
 
 import Hero from "./sections/Hero";
 import HowWeWork from "./sections/HowWeWork";
-import WhatIsRTO from "./sections/WhatIsRTO";
-import WhatYouGet from "./sections/WhatYouGet";
-import Investment from "./sections/Investment";
+// import WhatIsRTO from "./sections/WhatIsRTO";
+// import WhatYouGet from "./sections/WhatYouGet";
+// import Investment from "./sections/Investment";
 import BeginJourney from "global/BeginJourney";
 
 function Homepage() {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YT7M87W0RE');
   return (
     <>
       <Helmet>
@@ -20,7 +25,7 @@ function Homepage() {
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7M87W0RE"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          function gtag(){dataLayer.push(arguments)}
           gtag('js', new Date());
         
           gtag('config', 'G-YT7M87W0RE');
@@ -28,9 +33,9 @@ function Homepage() {
       </Helmet>
       <Hero />
       <HowWeWork />
-      <WhatIsRTO />
+      {/* <WhatIsRTO />
       <WhatYouGet />
-      <Investment />
+      <Investment /> */}
       <BeginJourney />
     </>
   )

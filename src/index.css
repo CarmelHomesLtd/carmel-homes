@@ -5,3 +5,7 @@
 .small-caps {
   font-variant-caps: small-caps;
 }
+
+.simple-phone-input-sri198-dropdow {
+  @apply z-10 !important;
+}

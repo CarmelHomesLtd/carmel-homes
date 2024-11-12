@@ -9,6 +9,7 @@ import Homepage from "./pages/Homepage";
 import AboutUs from "./pages/AboutUs";
 import ApplyNow from "./pages/ApplyNow";
 import WhatIsRentToOwn from "./pages/WhatIsRentToOwn";
+import OffMarketDeals from "./pages/OffMarketDeals";
 import PartnerWithUs from "./pages/PartnerWithUs";
 import Faq from "./pages/Faq";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/what-is-rent-to-own",
         element: <WhatIsRentToOwn />,
+      },
+      {
+        path: "/off-market-deals",
+        element: <OffMarketDeals />,
       },
       {
         path: "/faq",

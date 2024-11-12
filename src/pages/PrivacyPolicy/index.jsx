@@ -7,6 +7,11 @@ import render from "./policyRenderers";
 import useStore from "src/store";
 
 function PrivacyPolicy() {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YT7M87W0RE');
   const [
     copiedToClipBoard, showPopUp, hidePopUp] = useStore(
       (state) => [state.copiedToClipBoard, state.showPopUp, state.hidePopUp]
@@ -20,7 +25,7 @@ function PrivacyPolicy() {
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7M87W0RE"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          function gtag(){dataLayer.push(arguments)}
           gtag('js', new Date());
         
           gtag('config', 'G-YT7M87W0RE');

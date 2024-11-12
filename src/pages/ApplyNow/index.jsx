@@ -5,6 +5,11 @@ import Benefits from "./sections/Benefits";
 import FUGFormSteps from "./sections/FUGFormSteps";
 
 function ApplyNow() {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YT7M87W0RE');
   return (
     <div className="flex flex-col lg:flex-row lg:justify-center p-0 sm:p-5 md:p-10 2xl:py-56 bg-[url('applynow/hero.webp')] bg-center bg-cover bg-no-repeat">
       <Helmet>
@@ -14,7 +19,7 @@ function ApplyNow() {
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7M87W0RE"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          function gtag(){dataLayer.push(arguments)}
           gtag('js', new Date());
         
           gtag('config', 'G-YT7M87W0RE');

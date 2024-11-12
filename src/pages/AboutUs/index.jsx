@@ -6,6 +6,11 @@ import StackedOdds from "./sections/StackedOdds";
 import BeginJourney from "global/BeginJourney";
 
 function About() {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YT7M87W0RE');
   return (
     <div className="[line-height:1]">
       <Helmet>

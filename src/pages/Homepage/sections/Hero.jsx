@@ -38,19 +38,22 @@ function Hero() {
   return (
     <section ref={heroRef} className={`[background-blend-mode:overlay] bg-blue-primary/70 bg-[url('homepage/hero.png')] bg-cover bg-center bg-no-repeat w-full lg:h-[600px] flex justify-evenly overflow-hidden`}>
       <div className={`flex flex-col gap-6 ${isIntersecting ? "motion-safe:animate-slide-bottom md:motion-safe:animate-slide-left" : ""} md:max-w-[50%] lg:max-w-[37%] px-[clamp(1.25rem,7%,2.5rem)] py-28 md:pt-40 self-center`}>
-        <p className="text-white text-5xl [letter-spacing:0.15rem] font-extrabold" >
-          Get a Step Closer to <span className="text-brown-primary">Home</span> Ownership
-        </p>
+        <h1 className="text-white text-6xl font-extrabold">
+          We know what a <br /> home is really worth
+        </h1>
+        <p className="text-white text-xl">Whether you’re looking to buy your dream home or list your property for sale in our Off Market Deals, we’re here to help.</p>
         <div className="flex gap-3">
           <Link to="/apply-now">
             <Button theme="primary" className="px-4 py-3 shadow-slate-600 shadow-sm">
-              Apply Now
+              Get a Home
             </Button>
           </Link>
 
-          <Button theme="secondary" className="px-4 py-3 shadow-slate-200 shadow-sm" onClick={toggleCalendlyDialog}>
-            Request a Callback
-          </Button>
+          <Link to="/off-market-deals">
+            <Button theme="secondary" className="px-4 py-3 shadow-slate-200 shadow-sm">
+              Sell Your Property
+            </Button>
+          </Link>
 
           <dialog ref={calendlyRef} className="backdrop:bg-slate-900/50 open:w-[min(95vw,55rem)] open:h-[90%] absolute px-3 sm:px-6 py-8 sm:py-10 md:py-16 rounded-md open:flex justify-center">
             <InlineWidget 

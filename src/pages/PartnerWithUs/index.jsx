@@ -3,8 +3,14 @@ import { Helmet } from "react-helmet";
 import Hero from "./sections/Hero";
 import WhyPartner from "./sections/WhyPartner";
 import PartnerWithCarmel from "./sections/PartnerWithCarmel";
+import Investment from "./sections/Investment";
 
 function PartnerWithUs() {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YT7M87W0RE');
   return (
     <>
       <Helmet>
@@ -14,7 +20,7 @@ function PartnerWithUs() {
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7M87W0RE"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          function gtag(){dataLayer.push(arguments)}
           gtag('js', new Date());
         
           gtag('config', 'G-YT7M87W0RE');
@@ -22,6 +28,7 @@ function PartnerWithUs() {
       </Helmet>
       <h1 className="h-0 opacity-0">Partner with Us</h1>
       <Hero />
+      <Investment/>
       <WhyPartner />
       <PartnerWithCarmel />
     </>
