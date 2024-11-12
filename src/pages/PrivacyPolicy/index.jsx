@@ -7,11 +7,11 @@ import render from "./policyRenderers";
 import useStore from "src/store";
 
 function PrivacyPolicy() {
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
+  // window.dataLayer = window.dataLayer || [];
+  // function gtag(){dataLayer.push(arguments)}
+  // gtag('js', new Date());
 
-  gtag('config', 'G-YT7M87W0RE');
+  // gtag('config', 'G-YT7M87W0RE');
   const [
     copiedToClipBoard, showPopUp, hidePopUp] = useStore(
       (state) => [state.copiedToClipBoard, state.showPopUp, state.hidePopUp]
@@ -22,14 +22,14 @@ function PrivacyPolicy() {
         <title>Carmel Homes Ltd - Privacy Policy</title>
         <meta name="description" content="This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service." />
         {/*Google tag (gtag.js)*/}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7M87W0RE"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7M87W0RE"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments)}
           gtag('js', new Date());
         
           gtag('config', 'G-YT7M87W0RE');
-        </script>
+        </script> */}
       </Helmet>
       <section className="p-8 md:p-16 lg:p-36 py-4 md:py-8 lg:py-16">
         <h1 className="text-[2.25rem] md:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.75rem] font-extrabold">Privacy Policy</h1>

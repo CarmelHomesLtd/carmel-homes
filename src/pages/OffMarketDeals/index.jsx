@@ -9,25 +9,25 @@ import { ChallengesSection } from "./sections/Challenges";
 import { HowItWorksSection } from "./sections/HowItWorks";
 
 function OffMarketDeals() {
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
+  // window.dataLayer = window.dataLayer || [];
+  // function gtag(){dataLayer.push(arguments)}
+  // gtag('js', new Date());
 
-  gtag('config', 'G-YT7M87W0RE');  
+  // gtag('config', 'G-YT7M87W0RE');  
   return (
     <div className="flex flex-col bg-center bg-cover bg-no-repeat">
       <Helmet>
         <title>Carmel Homes Ltd - Off Market Deals</title>
         <meta name="description" content="Expand your addressable market instantly! Partnering with us can help convert reluctant renters into homeowners, increasing the chances of converting a sale." />
         {/*Google tag (gtag.js)*/}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7M87W0RE"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7M87W0RE"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments)}
           gtag('js', new Date());
         
           gtag('config', 'G-YT7M87W0RE');
-        </script>
+        </script> */}
       </Helmet>
       <HeroSection />
       <HowToSellSection />
