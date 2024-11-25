@@ -34,7 +34,7 @@ function Benefits() {
   ]
   
   return (
-    <div className="flex flex-col w-full max-w-screen-2xl gap-6 py-5 mx-auto">
+    <div className="flex flex-col w-full max-w-screen-2xl gap-6 py-5 px-[clamp(1.25rem,7%,2.5rem)] mx-auto">
       <h2 className="text-[2rem] font-bold text-center">Need to Sell Your Property Quickly? We Make It Simple.</h2>
       <p className="text-lg text-gray-600 text-center">Whether you&#39;re selling a house, condo, townhouse, or vacant land in Ontario, we’re here to serve
 you with ease and speed. Carmel Homes Ltd is committed to making the process fast and

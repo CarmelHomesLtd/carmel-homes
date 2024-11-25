@@ -18,7 +18,7 @@ export const HowItWorksSection = () => {
     }
   }, [])  
     return (
-      <section ref={howWeWorkRef} className="flex flex-col gap-20 items-center py-24 bg-gradient-to-br from-[#D3EAFF] via-white to-[#FFEED4]">
+      <section ref={howWeWorkRef} className="flex flex-col gap-20 items-center py-12 lg:py-24 px-[clamp(1.25rem,7%,2.5rem)] bg-gradient-to-br from-[#D3EAFF] via-white to-[#FFEED4]">
         <div className="grid gap-2 text-center">
           <h2 className="[font-size:2rem] font-bold">How It Works</h2>
           <p className="text-lg text-gray-600">Our Simple, Stress-Free Process to Sell Your Property</p>

@@ -23,12 +23,12 @@ function HowWeWork() {
   }, [])    
 
   return (
-    <section ref={howWeWorkRef} className="flex flex-col gap-28 items-center py-24 bg-gradient-to-br from-[#D3EAFF] via-white to-[#FFEED4]">
+    <section ref={howWeWorkRef} className="flex flex-col gap-28 items-center py-24 px-[clamp(1.25rem,7%,2.5rem)] bg-gradient-to-br from-[#D3EAFF] via-white to-[#FFEED4]">
       <div className="grid gap-1">
         <h2 className="text-[1.75rem] text-center font-bold">Feel empowered to make your next move</h2>
         <p className="text-lg text-gray-600 text-center">Our range of services can help you make confident, informed decisions.</p>
       </div>
-      <div className="grid grid-cols-3 gap-12 w-full max-w-screen-lg">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-12 w-full max-w-screen-lg">
         <div className={`flex flex-col gap-3 h-full justify-between ${isIntersecting ? "motion-safe:animate-[fadeUp_1s_ease]" : "opacity-0"}`}>
           <div className="grid gap-4">
             <div className="rounded-lg overflow-hidden">
@@ -37,7 +37,7 @@ function HowWeWork() {
             <h2 className="text-lg font-semibold">Begin your home ownership journey</h2>
             <p className="text-left">We work with you to repair what has been holding you back from qualifying for a traditional mortgage. This is done while you are living in your future home with our Rent-to-own scheme.</p>
           </div>
-          <Link to="/what-is-rent-to-own">
+          <Link to="/apply-now">
             <Button theme="primary" className="text-[1.25rem] font-semibold">
               Find out more
             </Button>
@@ -65,7 +65,7 @@ function HowWeWork() {
             <h2 className="text-lg font-semibold">Investment opportunities or real estate partner</h2>
             <p className="text-left">Investing in real estate is an option we offer for individuals with financial capacity. We also support real estate agents, brokers and other home buying professionals with client housing requirements.</p>
           </div>
-          <Link to="/what-is-rent-to-own">
+          <Link to="/partner-with-us">
             <Button theme="primary" className="text-[1.25rem] font-semibold">
               Find out more
             </Button>

@@ -33,7 +33,7 @@ function OffMarketDeals() {
       <HowToSellSection />
       <ChallengesSection />
       <HowItWorksSection />
-      <section className="flex flex-col w-full gap-20 p-0 sm:p-5 md:p-10 2xl:py-24">
+      <section className="flex flex-col w-full gap-20 p-0 sm:p-5 md:p-10 2xl:py-24 px-[clamp(1.25rem,7%,2.5rem)]">
         <Benefits />
         <FormSteps />
       </section>

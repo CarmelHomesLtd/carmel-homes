@@ -71,11 +71,11 @@ function Navbar() {
             [
               ["Home", "/"],
               ["Rent to Own?", "/what-is-rent-to-own"],
+              ["Off Market Deals", "/off-market-deals"],
+              ["Partner", "/partner-with-us"],
               ["About Us", "/about-us"],
               ["Faq", "/faq"],
               // ["Apply Now", "/apply-now"],
-              ["Off Market Deals", "/off-market-deals"],
-              ["Partner", "/partner-with-us"],
             ].map((link, id) => (
               <NavLink
                 to={link[1]}
