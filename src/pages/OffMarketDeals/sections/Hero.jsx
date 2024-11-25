@@ -14,7 +14,7 @@ export const HeroSection = () => {
             <h1 className="text-white text-5xl [letter-spacing:0.15rem] font-extrabold">A Quick and Stress-Free Way to Sell Your Property in Ontario, Canada</h1>
             <p className="text-white text-2xl">Get a FREE, no-obligation offer in just 72 hours or less. Simply enter your property details, and we’ll handle the rest!</p>
           </div>
-          <form name="off-market-deal" method="POST" className="flex flex-col gap-3 mt-5 w-full max-w-screen-sm mx-auto">
+          <form name="off-market-deal" method="post" className="flex flex-col gap-3 mt-5 w-full max-w-screen-sm mx-auto">
             <input type="hidden" name="form-name" value="off-market-deal" />
             <input
               className="carmel-input"
@@ -43,7 +43,7 @@ export const HeroSection = () => {
               value={emailAddress}
               onChange={(e) => setEmailAddress(e.target.value)}
             />
-            <Button theme="primary" type="submit" className="w-fit mx-auto shadow-slate-600 shadow-sm">
+            <Button theme="primary" attributes={{ type: "submit" }} className="w-fit mx-auto shadow-slate-600 shadow-sm">
               Get Your Offer Now
             </Button>
           </form>
