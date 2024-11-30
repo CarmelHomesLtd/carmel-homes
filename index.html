@@ -27,6 +27,30 @@
         <input type="text" id="email-address" name="email-address" />
       </div>
     </form>
+
+    <form name="sell-your-property"  encType="multipart/form-data" netlify netlify-honeypot="bot-field" hidden>
+      <div>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <input type="text" id="price" name="price" />
+      </div>
+      <div>
+        <input type="text" id="deadline" name="deadline" />
+      </div>
+      <div>
+        <textarea type="text" id="description" name="description"></textarea>
+      </div>
+      <div>
+        <input type="text" id="phoneNumber" name="phoneNumber" />
+      </div>
+      <div>
+        <input type="file" accept="image/*" id="pictures" name="pictures" />
+      </div>
+    </form>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

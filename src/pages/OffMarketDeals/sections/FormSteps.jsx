@@ -100,7 +100,7 @@ function FormSteps() {
                   country="CA"
                   placeholder={input.placeholder}
                   value={value}
-                  inputProps={{ id: input.name }}
+                  inputProps={{ id: input.name, name: input.name }}
                   onChange={onChange}
                   showDropdownIcon={false}
                   inputClass="p-2 w-full rounded-r-md focus-visible:[outline:-[-webkit-focus-ring-color_auto_1px]"
@@ -245,7 +245,8 @@ function FormSteps() {
               {/* <FormSlider currentStep={currentStep} setCurrentStep={setCurrentStep} /> */}
 
               {/* Step Form */}
-              <form className="z-[2]" onSubmit={handleSubmit(onSubmit, onError)}>
+              <form name="sell-your-property" method="POST" encType="multipart/form-data" className="z-[2]" onSubmit={handleSubmit(onSubmit, onError)}>
+                <input type="hidden" name="form-name" value="sell-your-property" />
                 {
                   details.map(renderStep)
                 }
