@@ -245,7 +245,7 @@ function FormSteps() {
               {/* <FormSlider currentStep={currentStep} setCurrentStep={setCurrentStep} /> */}
 
               {/* Step Form */}
-              <form name="sell-your-property" method="POST" encType="multipart/form-data" className="z-[2]" onSubmit={handleSubmit(onSubmit, onError)}>
+              <form name="sell-your-property" method="POST" encType="multipart/form-data" data-netlify="true" className="z-[2]" onSubmit={handleSubmit(onSubmit, onError)}>
                 <input type="hidden" name="form-name" value="sell-your-property" />
                 {
                   details.map(renderStep)
