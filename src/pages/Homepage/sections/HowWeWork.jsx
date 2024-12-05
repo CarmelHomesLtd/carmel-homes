@@ -51,7 +51,7 @@ function HowWeWork() {
             <h2 className="text-lg font-semibold">Sell your property</h2>
             <p className="text-left">Whether you're selling a house, condo, townhouse or vacant land in Ontario, we're here to serve you with ease and speed. Carmel Homes Ltd is committed to making the process fast and stress-free.</p>
           </div>
-          <Link to="/what-is-rent-to-own">
+          <Link to="/off-market-deals">
             <Button theme="primary" className="text-[1.25rem] font-semibold">
               Find out more
             </Button>
