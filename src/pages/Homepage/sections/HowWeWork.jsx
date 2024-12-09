@@ -37,9 +37,9 @@ function HowWeWork() {
             <h2 className="text-lg font-semibold">Begin your home ownership journey</h2>
             <p className="text-left">We work with you to repair what has been holding you back from qualifying for a traditional mortgage. This is done while you are living in your future home with our Rent-to-own scheme.</p>
           </div>
-          <Link to="/apply-now">
+          <Link to="/what-is-rent-to-own">
             <Button theme="primary" className="text-[1.25rem] font-semibold">
-              Find out more
+              Learn more
             </Button>
           </Link>
         </div>
@@ -62,12 +62,12 @@ function HowWeWork() {
             <div className="rounded-lg overflow-hidden">
               <img className="w-full h-full object-cover object-center" src={partnership} aria-roledescription="two-men-shaking-hands"/>
             </div>
-            <h2 className="text-lg font-semibold">Investment opportunities or real estate partner</h2>
+            <h2 className="text-lg font-semibold">Partners & Investors</h2>
             <p className="text-left">Investing in real estate is an option we offer for individuals with financial capacity. We also support real estate agents, brokers and other home buying professionals with client housing requirements.</p>
           </div>
           <Link to="/partner-with-us">
             <Button theme="primary" className="text-[1.25rem] font-semibold">
-              Find out more
+              Partner with us
             </Button>
           </Link>
         </div>
