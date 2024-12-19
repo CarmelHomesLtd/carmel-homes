@@ -5,10 +5,11 @@ import { Helmet } from "react-helmet";
 
 import Hero from "./sections/Hero";
 import HowWeWork from "./sections/HowWeWork";
-// import WhatIsRTO from "./sections/WhatIsRTO";
-// import WhatYouGet from "./sections/WhatYouGet";
-// import Investment from "./sections/Investment";
+import CarmelHomesContracting from "./sections/Contracting";
+import WhyChooseUs from "./sections/WhyChooseUs";
+import ThreeSteps from "./sections/ThreeSteps";
 import BeginJourney from "global/BeginJourney";
+import Services from "./sections/Services";
 
 function Homepage() {
   // window.dataLayer = window.dataLayer || [];
@@ -33,9 +34,10 @@ function Homepage() {
       </Helmet>
       <Hero />
       <HowWeWork />
-      {/* <WhatIsRTO />
-      <WhatYouGet />
-      <Investment /> */}
+      <CarmelHomesContracting />
+      <WhyChooseUs />
+      <ThreeSteps />
+      <Services />
       <BeginJourney />
     </>
   )
