@@ -22,7 +22,7 @@ function Services() {
   }, [])    
 
   return (
-    <section ref={howWeWorkRef} className="flex flex-col gap-28 items-center py-24 px-[clamp(1.25rem,7%,2.5rem)] bg-gradient-to-br from-[#D3EAFF] via-white to-[#FFEED4]">
+    <section ref={howWeWorkRef} className="flex flex-col gap-28 items-center overflow-hidden py-24 px-[clamp(1.25rem,7%,2.5rem)] bg-gradient-to-br from-[#D3EAFF] via-white to-[#FFEED4]">
       <div className="grid gap-1 max-w-screen-xl">
         <h2 className="text-[1.75rem] text-center font-bold">Our Services</h2>
         <p className="text-base text-gray-600 text-center">Carmel Homes is a leading renovation company proudly serving Hamilton &amp; Niagara Region. With over 10 years of experience, we are committed to providing outstanding craftsmanship and exceptional customer service. Whether you’re looking to remodel your entire home, add new spaces, or build a custom home from scratch, our team has the expertise to bring your vision to life. Our services include;</p>

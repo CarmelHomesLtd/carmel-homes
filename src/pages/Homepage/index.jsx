@@ -10,6 +10,7 @@ import WhyChooseUs from "./sections/WhyChooseUs";
 import ThreeSteps from "./sections/ThreeSteps";
 import BeginJourney from "global/BeginJourney";
 import Services from "./sections/Services";
+import FormSteps from "./sections/FormSteps";
 
 function Homepage() {
   // window.dataLayer = window.dataLayer || [];
@@ -38,6 +39,10 @@ function Homepage() {
       <WhyChooseUs />
       <ThreeSteps />
       <Services />
+      <div className="py-24">
+        <FormSteps />
+      </div>
+      
       <BeginJourney />
     </>
   )
