@@ -11,6 +11,7 @@ import ThreeSteps from "./sections/ThreeSteps";
 import BeginJourney from "global/BeginJourney";
 import Services from "./sections/Services";
 import FormSteps from "./sections/FormSteps";
+import OurProjects from "./sections/Projects";
 
 function Homepage() {
   // window.dataLayer = window.dataLayer || [];
@@ -36,6 +37,7 @@ function Homepage() {
       <Hero />
       <HowWeWork />
       <CarmelHomesContracting />
+      <OurProjects />
       <WhyChooseUs />
       <ThreeSteps />
       <Services />
