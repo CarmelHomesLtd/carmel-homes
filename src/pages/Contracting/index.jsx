@@ -3,12 +3,15 @@ import React from "react";
 
 import { Helmet } from "react-helmet";
 
-import Hero from "./sections/Hero";
-import HowWeWork from "./sections/HowWeWork";
+import Contracting from "./sections/Contracting";
+import WhyChooseUs from "./sections/WhyChooseUs";
+import ThreeSteps from "./sections/ThreeSteps";
 import BeginJourney from "global/BeginJourney";
+import Services from "./sections/Services";
+import FormSteps from "./sections/FormSteps";
+import OurProjects from "./sections/Projects";
 
-
-function Homepage() {
+function CarmelHomesContracting() {
   // window.dataLayer = window.dataLayer || [];
   // function gtag(){dataLayer.push(arguments)}
   // gtag('js', new Date());
@@ -29,12 +32,18 @@ function Homepage() {
           gtag('config', 'G-YT7M87W0RE');
         </script> */}
       </Helmet>
-      <Hero />
-      <HowWeWork />
+      <Contracting />
+      <OurProjects />
+      <WhyChooseUs />
+      <ThreeSteps />
+      <Services />
+      <div className="py-24">
+        <FormSteps />
+      </div>
       
       <BeginJourney />
     </>
   )
 }
 
-export default Homepage
+export default CarmelHomesContracting

@@ -4,6 +4,7 @@ import Button from "global/Button";
 import sellAHome from "./../../../assets/sell-a-home.jpg"
 import oldHouse from "./../../../assets/old-house.jpg"
 import partnership from "./../../../assets/partnership.jpg"
+import contracting from "./../../../assets/contracting.webp"
 
 function HowWeWork() {
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -28,7 +29,7 @@ function HowWeWork() {
         <h2 className="text-[1.75rem] text-center font-bold">Feel empowered to make your next move</h2>
         <p className="text-lg text-gray-600 text-center">Our range of services can help you make confident, informed decisions.</p>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-12 w-full max-w-screen-lg">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 w-full max-w-screen-xl">
         <div className={`flex flex-col gap-3 h-full justify-between ${isIntersecting ? "motion-safe:animate-[fadeUp_1s_ease]" : "opacity-0"}`}>
           <div className="grid gap-4">
             <div className="rounded-lg overflow-hidden">
@@ -68,6 +69,20 @@ function HowWeWork() {
           <Link to="/partner-with-us">
             <Button theme="primary" className="text-[1.25rem] font-semibold">
               Partner with us
+            </Button>
+          </Link>
+        </div>
+        <div className={`flex flex-col gap-3 h-full justify-between ${isIntersecting ? "motion-safe:animate-[fadeUp_1.8s_ease]" : "opacity-0"}`}>
+          <div className="grid gap-4">
+            <div className="rounded-lg overflow-hidden">
+              <img className="w-full h-full object-cover object-center" src={contracting} aria-roledescription="two-men-shaking-hands"/>
+            </div>
+            <h2 className="text-lg font-semibold">Carmel Homes Contracting</h2>
+            <p className="text-left">At Carmel Homes Contracting, we’re committed to turning your vision into reality. With a focus on exceptional craftsmanship, timely delivery, and clear communication, we ensure that every project meets and exceeds your expectations.</p>
+          </div>
+          <Link to="/carmel-homes-contracting">
+            <Button theme="primary" className="text-[1.25rem] font-semibold">
+              Let’s build together!
             </Button>
           </Link>
         </div>
