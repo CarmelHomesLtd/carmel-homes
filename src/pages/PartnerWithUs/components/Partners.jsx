@@ -3,7 +3,7 @@ function Partners() {
   const partners = [
     {
       title: "Investors",
-      details: "Diversify your skills or portfolios to minimize risk and enhance returns.",
+      details: "Connect with us to tell us your investment strategies and goals.",
       icon: "bg-[url('partnerwithus/investors-icon.svg')]",
     },
     {
@@ -22,6 +22,7 @@ function Partners() {
       icon: "bg-[url('partnerwithus/other-partners-icon.svg')]",
     },
   ]
+  
   return (
     <div className="flex flex-col lg:flex-row md:flex-wrap justify-center gap-5 w-[clamp(15rem,99%,30rem)] h-fit p-0">
       {
