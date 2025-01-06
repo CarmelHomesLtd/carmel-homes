@@ -43,7 +43,7 @@ function OurProjects() {
         return () => clearInterval(interval);
     }, [projects.length]);
     return (
-        <section className="grid gap-16 py-24">
+        <section className="grid gap-16 pt-24">
             <div className="container mx-auto px-5 md:px-0">
                 <h2 className="text-[1.75rem] text-center font-bold">Our Projects</h2>
             </div>
