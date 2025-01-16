@@ -18,6 +18,7 @@ function FormSteps() {
       "phoneNumber": "",
       "address": "",
       "askingPrice": "",
+      "reason": "",
       "deadline": "",
       "description": "",
       "pictures": "",

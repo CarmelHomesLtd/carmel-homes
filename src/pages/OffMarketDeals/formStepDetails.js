@@ -49,6 +49,15 @@ const formStepDetails = [
       ],
       [
         {
+          required() {return `Please input your ${this.name.toLowerCase()}`},
+          type: "textarea",
+          name: "reason",
+          label: "Why do you want to sell?",
+          placeholder: "Tell us why you want to sell?",
+        },
+      ],
+      [
+        {
           required() {return `Please input your ${this.label.toLowerCase()}`},
           type: "tel",
           name: "phoneNumber",

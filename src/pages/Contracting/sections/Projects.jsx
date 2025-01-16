@@ -48,11 +48,11 @@ function OurProjects() {
                 <h2 className="text-[1.75rem] text-center font-bold">Our Projects</h2>
             </div>
             <div className="relative w-full overflow-hidden">
-                <div className="flex w-full transition-transform duration-700" style={{ transform: `translateX(-${currentIndex * 100}%)`, }}>
+                <div className="flex w-full transition-transform duration-700 h-96 md:h-[900px]" style={{ transform: `translateX(-${currentIndex * 100}%)`, }}>
                     {
                         projects.map((image, index) => (
                             <div key={index} className="min-w-full flex-shrink-0 flex-grow-0">
-                                <img src={image.img} alt={`Slide ${index}`} className="w-full h-[900px] object-center object-cover hover:filter-none transition delay-200 ease-out" />
+                                <img src={image.img} alt={`Slide ${index}`} className="w-full h-96 md:h-[900px] object-center object-cover hover:filter-none transition delay-200 ease-out" />
                             </div>
                         ))
                     }
