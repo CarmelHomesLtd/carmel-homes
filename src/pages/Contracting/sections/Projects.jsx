@@ -51,7 +51,7 @@ function OurProjects() {
                 <div className="flex w-full transition-transform duration-700 h-96 md:h-[900px]" style={{ transform: `translateX(-${currentIndex * 100}%)`, }}>
                     {
                         projects.map((image, index) => (
-                            <div key={index} className="min-w-full flex-shrink-0 flex-grow-0">
+                            <div key={index} className="min-w-full">
                                 <img src={image.img} alt={`Slide ${index}`} className="w-full h-96 md:h-[900px] object-center object-cover hover:filter-none transition delay-200 ease-out" />
                             </div>
                         ))

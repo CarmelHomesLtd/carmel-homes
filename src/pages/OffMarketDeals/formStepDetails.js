@@ -23,6 +23,15 @@ const formStepDetails = [
       [
         {
           required() {return `Please input your ${this.label.toLowerCase()}`},
+          type: "tel",
+          name: "phoneNumber",
+          label: "Phone Number",
+          placeholder: "Phone Number",
+        },
+      ],
+      [
+        {
+          required() {return `Please input your ${this.label.toLowerCase()}`},
           type: "text",
           name: "price",
           label: "Asking Price",
@@ -54,15 +63,6 @@ const formStepDetails = [
           name: "reason",
           label: "Why do you want to sell?",
           placeholder: "Tell us why you want to sell?",
-        },
-      ],
-      [
-        {
-          required() {return `Please input your ${this.label.toLowerCase()}`},
-          type: "tel",
-          name: "phoneNumber",
-          label: "Phone Number",
-          placeholder: "Phone Number",
         },
       ],
       [

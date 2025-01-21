@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 
 import Hero from "./sections/Hero";
 import Founder from "./sections/Founder";
-import StackedOdds from "./sections/StackedOdds";
+// import StackedOdds from "./sections/StackedOdds";
 import BeginJourney from "global/BeginJourney";
 
 function About() {
@@ -26,10 +26,10 @@ function About() {
           gtag('config', 'G-YT7M87W0RE');
         </script> */}
       </Helmet>
-      <h1 className="h-0 opacity-0">About Us</h1>
+      {/* <h1 className="h-0 opacity-0">About Us</h1> */}
       <Hero />
       <Founder />
-      <StackedOdds />
+      {/* <StackedOdds /> */}
       <BeginJourney />
     </div>
   )
