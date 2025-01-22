@@ -65,15 +65,51 @@ export const faqs = [
 
 export const offMarketFaqs = [
   {
-    title: "Can I find these properties on MLS?",
-    details: "The properties on our site are unique because most of them are not listed on the MLS (Multiple Listing Service), which is where real estate agents typically advertise homes for sale. We specialize in working directly with homeowners, allowing us to offer properties that are off-market and often available at better prices or terms. This approach also helps homeowners solve their challenges more quickly and affordably than going through the traditional MLS process."
+    title: "Is this the right way to sell?",
+    details: "Absolutely! The real estate industry is evolving, and more Canadians are choosing alternative ways to sell their homes quickly, easily, and transparently. That’s where we come in. If you don’t have the time, resources, or ability to list your home on the market for top dollar, we’re here to help. We’ll evaluate your situation, provide you with a fair and transparent all-cash offer, and close on a timeline that works best for you. It’s a simple, hassle-free solution tailored to your needs."
   },
   {
-    title: "How often do you add new investment properties?",
-    details: "We’re constantly sourcing new investment properties and updating our site regularly. New properties are added to the site and our VIP Buyers List on an ongoing basis. Since our properties tend to sell quickly, we recommend checking back often or joining our VIP Buyers List to stay updated and get priority access to the latest deals."
+    title: "Will I get a low offer?",
+    details: "Not at all! Our aim is to give you a fair and competitive offer based on the current condition of your property and its potential value after renovations or improvements. We take pride in being transparent and will gladly explain how we calculate the offer. Our process ensures you understand every step, so you can feel confident that you’re getting a reasonable deal tailored to your property’s unique situation."
   },
   {
-    title: "Do you charge any fees to buy or sell a home?",
-    details: "No, we don’t charge homeowners any fees to help them find a solution. We focus on creating win-win outcomes. When we purchase properties, we do so at mutually beneficial prices. If you’re buying an investment property from us, we acquire it at a discount, include our property acquisition fee (which is our profit for finding and negotiating the deal), and still offer it to you at a discounted price. It’s a win-win for everyone involved!"
+    title: "What if I do not want to close very fast?",
+    details: "That’s completely fine! We understand that everyone’s situation is different, and we’re here to work on your timeline. Whether you need more time to prepare, make arrangements, or simply prefer a later closing date, we’ll adjust to meet your needs. Flexibility is part of our commitment to making the process as stress-free as possible for you."
+  },
+  {
+    title: "How fast is a fast closing?",
+    details: "A fast closing can be as quick as just a few days—sometimes as fast as 4 days, depending on your situation and property details. We work efficiently to handle the process so you can get your sale finalized on your preferred timeline. If you need to close quickly, we’re ready to make it happen!"
+  },
+  {
+    title: "What does an &quot;all-cash offer&quot; mean?",
+    details: "An &quot;all-cash offer&quot; means we pay the entire purchase price of your home in cash, without relying on traditional bank financing. Since we’re direct buyers, this eliminates the risks of loan approvals or delays in closing. When we present you with an offer, it’s the full amount you’ll receive at closing—simple, straightforward, and hassle-free!"
+  },
+  {
+    title: "What does &quot;as-is&quot; mean?",
+    details: "Selling a property &quot;as-is&quot; means you don’t need to make any repairs, renovations, or updates before selling. We buy the property in its current condition, no matter what it looks like or what work it might need. This saves you time, money, and effort, allowing for a faster and more convenient sale."
+  },
+  {
+    title: "Is there any obligation when I submit my details?",
+    details: "Not at all! Sharing your property details with us comes with no strings attached. We’ll review the information, possibly reach out to learn more, and provide you with a no-pressure, all-cash offer. The decision to move forward is entirely yours, and you’re free to take your time or explore other options. We’re here to provide a solution if and when you’re ready!"
+  },
+  {
+    title: "How are you different from a real estate agent?",
+    details: "Unlike real estate agents who list properties and wait for a buyer, we buy houses directly from you. Agents typically take several months to sell a home and charge a commission of 3–6% of the sale price, which can add up to thousands of dollars. We’re not agents—we’re direct buyers. This means there are no commissions or fees, and we can provide you with a cash offer quickly, often within a day. Plus, we purchase your house as- is, so you don’t need to worry about repairs, showings, or waiting months for a sale. We take on the risk of buying, fixing, and reselling the house, so you can enjoy a fast and hassle-free process."
+  },
+  {
+    title: "Are there any fees or commissions to work with you?",
+    details: "There are absolutely no fees or commissions when you sell your property to us. Unlike traditional methods, where you might have to pay agent fees or closing costs, we make it easy by offering a straightforward, hassle-free transaction. If you accept our offer, we handle everything, including covering the closing costs in many cases. We make our profit by investing in repairs and improvements, taking the risk on the property. Once we buy your house, you walk away with cash in hand and none of the responsibilities or payments tied to the property."
+  },
+  {
+    title: "How do you determine the price to offer on my property?",
+    details: "We believe in transparency, so we’re happy to explain our process. When determining our offer, we consider several factors, including the location of your property, the amount of repairs or updates needed, its current condition, and recent sales of similar homes in the area. We take all these details into account to come up with a fair and competitive offer that benefits both you and us. Our goal is to provide a price that reflects the true value of your home, based on the current market and condition."
+  },
+  {
+    title: "Do you pay fair prices for properties?",
+    details: "Yes, we aim to offer fair prices based on the current condition of the property and the market. While the houses we buy are typically below market value, this allows us to resell them after making necessary repairs. Sellers often appreciate our offer because we provide cash, close quickly (no waiting for financing), and take care of repairs, with no agent fees involved. We’re focused on creating a win-win situation for both parties. Our pricing is transparent, and there&#39;s no obligation to accept the offer—it&#39;s just one more option for you to consider!"
+  },
+  {
+    title: "Will you be listing my house on MLS or are you buying it?",
+    details: "We’re not real estate agents, so we won’t be listing your house on the MLS. Instead, we are direct home buyers. We purchase properties that fit our criteria, and once we buy them, we may renovate and resell them or keep them as rentals. Our process is straightforward: we make an offer to buy your home directly from you, so you won’t have to deal with listings or waiting for a buyer."
   }
 ]
