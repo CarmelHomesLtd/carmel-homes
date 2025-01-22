@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const faqs = [
+export const faqs = [
   {
     title: "How do the payments compare against traditional mortgage payments?",
     details: "After all said and done, the complete payments are definitely LOWER compared to the conventional 5% mortgage interest rate.",
@@ -61,6 +61,9 @@ const faqs = [
     title: "If I am currently self-employed or have a commission-based salary, can I qualify?",
     details: "Yes, you could qualify, however, an assessment would be conducted on your current financial standings to determine how to proceed with you on the Rent-To-Own program.",
   },
+];
+
+export const offMarketFaqs = [
   {
     title: "Can I find these properties on MLS?",
     details: "The properties on our site are unique because most of them are not listed on the MLS (Multiple Listing Service), which is where real estate agents typically advertise homes for sale. We specialize in working directly with homeowners, allowing us to offer properties that are off-market and often available at better prices or terms. This approach also helps homeowners solve their challenges more quickly and affordably than going through the traditional MLS process."
@@ -73,6 +76,4 @@ const faqs = [
     title: "Do you charge any fees to buy or sell a home?",
     details: "No, we don’t charge homeowners any fees to help them find a solution. We focus on creating win-win outcomes. When we purchase properties, we do so at mutually beneficial prices. If you’re buying an investment property from us, we acquire it at a discount, include our property acquisition fee (which is our profit for finding and negotiating the deal), and still offer it to you at a discounted price. It’s a win-win for everyone involved!"
   }
-];
-
-export default faqs;
+]
