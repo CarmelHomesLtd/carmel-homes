@@ -41,11 +41,6 @@ function Footer() {
           <p className="text-xs lg:text-sm font-semibold">
             Home ownership in a few clicks. Get in touch tell us your story, so that we can get an overview of your challenges and support you.
           </p>
-          <Link to="/apply-now/">
-            <Button theme="secondary" isNavbarButton={true}>
-              Apply Now
-            </Button>
-          </Link>
         </div>
 
         {/* Links */}
