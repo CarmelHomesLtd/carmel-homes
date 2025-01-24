@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 // import FormSlider from "../components/FormSlider";
 // import FormButtons from "../components/FormButtons";
 import FormSubmitted from "../components/FormSubmitted";
@@ -26,9 +26,9 @@ function FormSteps() {
   });
   const formValues = watch();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [currentStep, isFormSubmitted]);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [currentStep, isFormSubmitted]);
 
   function onSubmit(data, e) {
     console.log("data", data);
