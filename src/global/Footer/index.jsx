@@ -53,10 +53,11 @@ function Footer() {
           {/* Service */}
           <div className="flex flex-col gap-2 text-xs font-semibold [font-variant:small-caps]">
             <p className="text-lg [font-variant:normal]">Service</p>
-            <HashLink to="/what-is-rent-to-own#how-it-works" scroll={el => scrollWithOffset(el)}>
-              How It Works
+            <HashLink to="/what-is-rent-to-own" scroll={el => scrollWithOffset(el)}>
+              Rent to Own
             </HashLink>
-            <Link to="/apply-now">Apply Now</Link>
+            <Link to="/off-market-deals">Sell Your Property</Link>
+            <Link to="/carmel-homes-contracting">Project Management</Link>
           </div>
 
           {/* Company */}

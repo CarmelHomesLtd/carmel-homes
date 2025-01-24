@@ -34,8 +34,8 @@ function WhatIsRentToOwn() {
       <div id="how-it-works">
         <HowDoesItWork />
       </div>
-      <FindOutMore />
       <BeginJourney />
+      <FindOutMore />
     </div>
   )
 }
