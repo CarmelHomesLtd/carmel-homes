@@ -70,7 +70,7 @@ function Navbar() {
             /* Navlink names and URLs */
             [
               ["Home", "/"],
-              ["Rent to Own?", "/what-is-rent-to-own"],
+              ["Rent to Own", "/what-is-rent-to-own"],
               ["Off Market Deals", "/off-market-deals"],
               ["Partner", "/partner-with-us"],
               ["Carmel Homes Contracting", "/carmel-homes-contracting"],
