@@ -81,12 +81,12 @@ export const offMarketFaqs = [
     details: "A fast closing can be as quick as just a few days—sometimes as fast as 4 days, depending on your situation and property details. We work efficiently to handle the process so you can get your sale finalized on your preferred timeline. If you need to close quickly, we’re ready to make it happen!"
   },
   {
-    title: "What does an &quot;all-cash offer&quot; mean?",
-    details: "An &quot;all-cash offer&quot; means we pay the entire purchase price of your home in cash, without relying on traditional bank financing. Since we’re direct buyers, this eliminates the risks of loan approvals or delays in closing. When we present you with an offer, it’s the full amount you’ll receive at closing—simple, straightforward, and hassle-free!"
+    title: "What does an 'all-cash offer' mean?",
+    details: "An 'all-cash offer' means we pay the entire purchase price of your home in cash, without relying on traditional bank financing. Since we’re direct buyers, this eliminates the risks of loan approvals or delays in closing. When we present you with an offer, it’s the full amount you’ll receive at closing—simple, straightforward, and hassle-free!"
   },
   {
-    title: "What does &quot;as-is&quot; mean?",
-    details: "Selling a property &quot;as-is&quot; means you don’t need to make any repairs, renovations, or updates before selling. We buy the property in its current condition, no matter what it looks like or what work it might need. This saves you time, money, and effort, allowing for a faster and more convenient sale."
+    title: "What does 'as-is' mean?",
+    details: "Selling a property 'as-is' means you don’t need to make any repairs, renovations, or updates before selling. We buy the property in its current condition, no matter what it looks like or what work it might need. This saves you time, money, and effort, allowing for a faster and more convenient sale."
   },
   {
     title: "Is there any obligation when I submit my details?",
