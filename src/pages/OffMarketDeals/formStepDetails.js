@@ -33,6 +33,15 @@ const formStepDetails = [
         {
           required() {return `Please input your ${this.label.toLowerCase()}`},
           type: "text",
+          name: "address",
+          label: "Property address",
+          placeholder: "Address",
+        },
+      ],
+      [
+        {
+          required() {return `Please input your ${this.label.toLowerCase()}`},
+          type: "text",
           name: "price",
           label: "Asking Price",
           placeholder: "Asking Price",
