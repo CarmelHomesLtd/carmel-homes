@@ -12,30 +12,28 @@ function Faqs() {
       </div>
       {
         active === "rent-to-own" ? (
-      <div className="h-max flex flex-col md:flex-row md:flex-wrap justify-center items-center md:items-start gap-6 md:gap-10">
-        {
-          faqs.map((faq, index) => (
-            <div key={index}>
-              <FaqCard faq={faq} />
-            </div>
-          ))
-        }
-      </div>
-
+        <div className="h-max flex flex-col md:flex-row md:flex-wrap justify-center items-center md:items-start gap-6 md:gap-10">
+          {
+            faqs.map((faq, index) => (
+              <div key={index}>
+                <FaqCard faq={faq} />
+              </div>
+            ))
+          }
+        </div>
         ): (
-      <div className="h-max flex flex-col md:flex-row md:flex-wrap justify-center items-center md:items-start gap-6 md:gap-10">
-        {
-          offMarketFaqs.map((faq, index) => (
-            <div key={index}>
-              <FaqCard faq={faq} />
-            </div>
-          ))
-        }
-      </div>
-            
+        <div className="h-max flex flex-col md:flex-row md:flex-wrap justify-center items-center md:items-start gap-6 md:gap-10">
+          {
+            offMarketFaqs.map((faq, index) => (
+              <div key={index}>
+                <FaqCard faq={faq} />
+              </div>
+            ))
+          }
+        </div>
         )
       }
-      </section>
+    </section>
   )
 }
 
