@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 
 import Benefits from "./sections/Benefits";
 // import FormSteps from "./sections/FormSteps";
-import FUGFormSteps from "./sections/FUGFormSteps";
+import FormSteps from "./sections/FormSteps";
 
 function ApplyNow() {
   // window.dataLayer = window.dataLayer || [];
@@ -27,7 +27,7 @@ function ApplyNow() {
       </Helmet>
       <h1 className="h-0 opacity-0">Apply Now</h1>
       <Benefits />
-      <FUGFormSteps />
+      <FormSteps />
     </div>
   )
 }
