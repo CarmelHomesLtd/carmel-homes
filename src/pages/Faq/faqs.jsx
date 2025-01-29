@@ -55,7 +55,7 @@ export const faqs = [
   {
     title: "My credit is less than perfect, can you still help me?",
     details: "Reach out to tell us your story and we will assess your situation. Need more information? ",
-    link: <Link to="/">Book a discovery call!</Link>,
+    link: <Link to="/apply-now">Book a discovery call!</Link>,
   },
   {
     title: "If I am currently self-employed or have a commission-based salary, can I qualify?",
@@ -106,10 +106,10 @@ export const offMarketFaqs = [
   },
   {
     title: "Do you pay fair prices for properties?",
-    details: "Yes, we aim to offer fair prices based on the current condition of the property and the market. While the houses we buy are typically below market value, this allows us to resell them after making necessary repairs. Sellers often appreciate our offer because we provide cash, close quickly (no waiting for financing), and take care of repairs, with no agent fees involved. We’re focused on creating a win-win situation for both parties. Our pricing is transparent, and there&#39;s no obligation to accept the offer—it&#39;s just one more option for you to consider!"
+    details: "Yes, we aim to offer fair prices based on the current condition of the property and the market. While the houses we buy are typically below market value, this allows us to resell them after making necessary repairs. Sellers often appreciate our offer because we provide cash, close quickly (no waiting for financing), and take care of repairs, with no agent fees involved. We’re focused on creating a win-win situation for both parties. Our pricing is transparent, and there's no obligation to accept the offer—it's just one more option for you to consider!"
   },
   {
     title: "Will you be listing my house on MLS or are you buying it?",
     details: "We’re not real estate agents, so we won’t be listing your house on the MLS. Instead, we are direct home buyers. We purchase properties that fit our criteria, and once we buy them, we may renovate and resell them or keep them as rentals. Our process is straightforward: we make an offer to buy your home directly from you, so you won’t have to deal with listings or waiting for a buyer."
   }
-]
+];

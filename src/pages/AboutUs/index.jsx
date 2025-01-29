@@ -30,7 +30,7 @@ function About() {
       <Hero />
       <Founder />
       {/* <StackedOdds /> */}
-      <BeginJourney />
+      <BeginJourney text="Putting your needs first!" hideAction />
     </div>
   )
 }

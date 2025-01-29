@@ -7,8 +7,8 @@ function Faqs() {
   return (
     <section className="flex flex-col justify-center items-center gap-6 md:gap-10 px-5 py-10">
       <div className="flex items-center gap-3 bg-gray-100 px-1.5 py-1 rounded">
-        <button type="button" onClick={() => setActive("rent-to-own")} className={`text-lg font-semibold px-3 py-1 rounded ${active === "rent-to-own" ? "bg-white" : "bg-transparent"}`}>Rent To Own FAQs</button>
-        <button type="button" onClick={() => setActive("off-market")} className={`text-lg font-semibold px-3 py-1 rounded ${active === "off-market" ? "bg-white" : "bg-transparent"}`}>Off Market FAQs</button>
+        <button type="button" onClick={() => setActive("rent-to-own")} className={`text-lg px-3 py-1 rounded ${active === "rent-to-own" ? "bg-white font-bold" : "bg-transparent font-semibold"}`}>Rent To Own FAQs</button>
+        <button type="button" onClick={() => setActive("off-market")} className={`text-lg px-3 py-1 rounded ${active === "off-market" ? "bg-white font-bold" : "bg-transparent font-semibold"}`}>Off Market FAQs</button>
       </div>
       {
         active === "rent-to-own" ? (

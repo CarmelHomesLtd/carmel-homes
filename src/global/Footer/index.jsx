@@ -39,7 +39,7 @@ function Footer() {
           </Link>
           {/* Write up */}
           <p className="text-xs lg:text-sm font-semibold">
-            Home ownership in a few clicks. Get in touch tell us your story, so that we can get an overview of your challenges and support you.
+            Home ownership & sell your home in a few clicks. Get in touch tell us your story, so that we can get an overview of your challenges and support you.
           </p>
         </div>
 
