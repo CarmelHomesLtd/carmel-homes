@@ -17,10 +17,14 @@ function FormSteps() {
       "email": "",
       "phoneNumber": "",
       "address": "",
-      "askingPrice": "",
-      "reason": "",
+      "city": "",
+      "province": "",
+      "postal_code": "",
+      "price": "",
       "deadline": "",
       "description": "",
+      "reason": "",
+      "otherReason": "",
       "pictures": "",
     }
   });

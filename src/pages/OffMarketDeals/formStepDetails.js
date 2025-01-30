@@ -142,6 +142,13 @@ const formStepDetails = [
             },
           ],
         },
+        {
+          type: "text",
+          name: "otherReason",
+          label: "Other",
+          placeholder: "Other reason",
+          other: true,
+        },
       ],
       [
         {

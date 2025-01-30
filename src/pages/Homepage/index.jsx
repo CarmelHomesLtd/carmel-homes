@@ -32,7 +32,7 @@ function Homepage() {
       <Hero />
       <HowWeWork />
       
-      <BeginJourney text="A faster and easier way to buy and sell your home" />
+      <BeginJourney text="A faster and easier way to buy and sell your home" hideAction />
     </>
   )
 }

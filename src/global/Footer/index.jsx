@@ -39,7 +39,7 @@ function Footer() {
           </Link>
           {/* Write up */}
           <p className="text-xs lg:text-sm font-semibold">
-            Home ownership & sell your home in a few clicks. Get in touch tell us your story, so that we can get an overview of your challenges and support you.
+            Get a home & sell your home in a few clicks. Get in touch tell us your story, so that we can get an overview of your challenges and support you.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ function Footer() {
           {/* Contact */}
           <div className="flex flex-col items-start gap-2 text-xs font-semibold [font-variant:small-caps]">
             <p className="text-lg [font-variant:normal]">Contact</p>
-            <Link to="tel:+15874172421">+1 (587) 4172421</Link>
+            <Link to="tel:+12267050500">+1 (226) 7050500</Link>
             <Link to="mailto:info@carmelhomesltd.com">info@carmelhomesltd.com</Link>
             <div className="mt-1 lg:mt-2">
               <Button theme="secondary" isNavbarButton={true} onClick={toggleCalendlyDialog}>

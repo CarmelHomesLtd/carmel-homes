@@ -52,7 +52,7 @@ export const ChallengesSection = () => {
                 </div>
                 <div className={`flex flex-col gap-3 ${isIntersecting ? "motion-safe:animate-fade-up" : "opacity-0"}`}>
                     <h3 className="text-xl font-semibold text-white">Want to speak with us? We’re just a call away!</h3>
-                    <p className="text-lg text-white">Call us directly at <a href="tel:+15874172421" target="_blank" rel="noreferrer" className="font-bold text-amber-400">+1 (587) 4172421</a></p>
+                    <p className="text-lg text-white">Call us directly at <a href="tel:+12267050500" target="_blank" rel="noreferrer" className="font-bold text-amber-400">+1 (226) 7050500</a></p>
                     <p className="text-lg text-white">Or send us an email at: <a href="mailto:info@carmelhomesltd.com" target="_blank" rel="noreferrer" className="font-bold text-amber-400">info@carmelhomesltd.com</a></p>
                 </div>
             </div>
