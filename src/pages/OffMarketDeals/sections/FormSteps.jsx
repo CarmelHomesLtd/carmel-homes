@@ -11,7 +11,7 @@ function FormSteps() {
   const [currentStep, setCurrentStep] = useState(1);
   const [isFormSubmitted, toggleIsFormSubmitted] = useState(false);
 
-  const { handleSubmit, register, control, formState: {errors}, watch, setValue } = useForm({
+  const { handleSubmit, register, control, formState: {errors}, watch, setValue, getValues } = useForm({
     defaultValues: {
       "name": "",
       "email": "",
@@ -160,30 +160,61 @@ function FormSteps() {
         );
       
       default:
-        return (
-          <>
-            <input 
-              {...register(input.name, {
-                required: input.required ? input.required() : false,
-                valueAsNumber: input.type == "number" || false,
-                minLength: {
-                  value: input.type == "text" && 2,
-                  message: input.type == "text" && "Please enter a name of at least 2 characters",
-                },
-                pattern: {
-                  value: input.type == "email" && (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/),
-                  message: input.type == "email" && "Please enter a valid email address",
-                }
-              })}
-              id={input.name} 
-              name={input.name} 
-              type={input.type} 
-              placeholder={input.placeholder} 
-              onChange={e=>{if(input.type=="date")setValue("moveInDate", e.target.value)}}
-              className={`bg-white rounded-md p-2 w-full ${formValues["moveInDate"] == "" && input.type == "date" ? "text-gray-400" : "text-blue-primary"}`}
-            />
-          </>
-        );
+        if ((input.name === "otherReason")) {
+          if ((getValues("reason") === "other")) {
+            return (
+              <>
+                <input 
+                  {...register(input.name, {
+                    required: input.required ? input.required() : false,
+                    valueAsNumber: input.type == "number" || false,
+                    minLength: {
+                      value: input.type == "text" && 2,
+                      message: input.type == "text" && "Please enter a name of at least 2 characters",
+                    },
+                    pattern: {
+                      value: input.type == "email" && (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/),
+                      message: input.type == "email" && "Please enter a valid email address",
+                    }
+                  })}
+                  id={input.name} 
+                  name={input.name} 
+                  type={input.type} 
+                  placeholder={input.placeholder} 
+                  onChange={e=>{if(input.type=="date")setValue("moveInDate", e.target.value)}}
+                  className={`bg-white rounded-md p-2 w-full ${formValues["moveInDate"] == "" && input.type == "date" ? "text-gray-400" : "text-blue-primary"}`}
+                />
+              </>
+            );
+          } else {
+            return null;
+          }
+        } else {
+          return (
+            <>
+              <input 
+                {...register(input.name, {
+                  required: input.required ? input.required() : false,
+                  valueAsNumber: input.type == "number" || false,
+                  minLength: {
+                    value: input.type == "text" && 2,
+                    message: input.type == "text" && "Please enter a name of at least 2 characters",
+                  },
+                  pattern: {
+                    value: input.type == "email" && (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/),
+                    message: input.type == "email" && "Please enter a valid email address",
+                  }
+                })}
+                id={input.name} 
+                name={input.name} 
+                type={input.type} 
+                placeholder={input.placeholder} 
+                onChange={e=>{if(input.type=="date")setValue("moveInDate", e.target.value)}}
+                className={`bg-white rounded-md p-2 w-full ${formValues["moveInDate"] == "" && input.type == "date" ? "text-gray-400" : "text-blue-primary"}`}
+              />
+            </>
+          );
+        }
     }
   }
 
@@ -199,7 +230,13 @@ function FormSteps() {
                 lgLayout = (step.step == 3 || (step.step == 2 && !field.noLayoutChange)) ? "md:flex-row md:w-full md:justify-between" : "";
                 return (
                   <label className={`relative flex flex-col ${lgLayout} p-2 ${field.required && errors[field.name] ? "mb-10" : ""} relative w-full justify-start`} key={fieldIndex} htmlFor={field.name}>
-                    <span className={`${lgLayout != "" && "w-full md:w-[clamp(10rem,50%,18rem)]"}`}>{`${field.label}`}<span className="text-2xl font-bold">{field.required ? "*": ""}</span>: </span>
+                    {
+                      ((field.name === "otherReason") && (getValues("reason") === "other")) ? <span className={`${lgLayout != "" && "w-full md:w-[clamp(10rem,50%,18rem)]"}`}>{`${field.label}`}<span className="text-2xl font-bold">{field.required ? "*": ""}</span>: </span> : null
+                    }
+                    {
+                      (field.name !== "otherReason") ? <span className={`${lgLayout != "" && "w-full md:w-[clamp(10rem,50%,18rem)]"}`}>{`${field.label}`}<span className="text-2xl font-bold">{field.required ? "*": ""}</span>: </span> : null
+                    }
+                    
                     {renderInput(field)}
                     {errors[field.name] && (<span className={`absolute top-[100%] text-red-600 text-sm w-full md:w-[clamp(10rem,90%,18rem)]`} role="alert">*{errors[field.name].message}</span>)}
                   </label>
