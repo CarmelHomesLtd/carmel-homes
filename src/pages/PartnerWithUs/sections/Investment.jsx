@@ -1,6 +1,4 @@
 import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
-import Button from "global/Button";
 
 function Investment() {
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -29,11 +27,6 @@ function Investment() {
         <p>
           At Carmel Homes, we provide you with range of opportunities. Our program is designed to help individuals with the financial capacity to invest in real estate.
         </p>
-        <Link to="/partner-with-us">
-          <Button theme="secondary" className="px-3 py-4 text-[1.25rem] font-semibold">
-            Learn More
-          </Button>
-        </Link>
       </div>
     </section>
   )

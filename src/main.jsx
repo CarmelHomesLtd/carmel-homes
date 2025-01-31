@@ -9,7 +9,9 @@ import Homepage from "./pages/Homepage";
 import AboutUs from "./pages/AboutUs";
 import ApplyNow from "./pages/ApplyNow";
 import WhatIsRentToOwn from "./pages/WhatIsRentToOwn";
+import OffMarketDeals from "./pages/OffMarketDeals";
 import PartnerWithUs from "./pages/PartnerWithUs";
+import CarmelHomesContracting from "./pages/Contracting";
 import Faq from "./pages/Faq";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import _404 from "./pages/404";
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
       {
         path: "/what-is-rent-to-own",
         element: <WhatIsRentToOwn />,
+      },
+      {
+        path: "/carmel-homes-contracting",
+        element: <CarmelHomesContracting />,
+      },
+      {
+        path: "/off-market-deals",
+        element: <OffMarketDeals />,
       },
       {
         path: "/faq",

@@ -34,11 +34,7 @@ const formStepDetails = [
           placeholder: "Phone Number",
         },
       ],
-    ],
-  },
-  {
-    step: 2,
-    inputs: [
+      [
       {
         type: "select",
         name: "status",
@@ -72,6 +68,8 @@ const formStepDetails = [
           { value: "no_source", text: "El/No source" },
         ],
       },
+      ],
+      
       {
         type: "checkbox",
         name: "debtStatus",
@@ -99,11 +97,7 @@ const formStepDetails = [
           noLayoutChange: true,
         },
       ],
-    ],
-  },
-  {
-    step: 3,
-    inputs: [
+      [
       {
         type: "select",
         name: "creditScore",
@@ -150,6 +144,9 @@ const formStepDetails = [
           },
         ],
       },
+
+      ],
+      [
       {
         type: "select",
         name: "howDidYouHearAboutUs",
@@ -180,11 +177,8 @@ const formStepDetails = [
         placeholder: "Ex. LinkedIn",
         other: true,
       },
-    ],
-  },
-  {
-    step: 4,
-    inputs: [
+
+      ],
       [
         {
           required() {return `Please input your ${this.label.toLowerCase()}`},

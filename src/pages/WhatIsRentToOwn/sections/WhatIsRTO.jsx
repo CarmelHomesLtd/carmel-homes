@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
 import Button from "global/Button";
-import VideoPlayer from "../components/VideoPlayer";
+import VideoPlayer from "../../Homepage/components/VideoPlayer";
 
 function WhatIsRTO() {
   const [isIntersecting, setIsIntersecting] = useState(false);
