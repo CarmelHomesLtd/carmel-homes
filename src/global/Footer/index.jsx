@@ -39,13 +39,8 @@ function Footer() {
           </Link>
           {/* Write up */}
           <p className="text-xs lg:text-sm font-semibold">
-            Home ownership in a few clicks. Get in touch tell us your story, so that we can get an overview of your challenges and support you.
+            Get a home & sell your home in a few clicks. Get in touch tell us your story, so that we can get an overview of your challenges and support you.
           </p>
-          <Link to="/apply-now/">
-            <Button theme="secondary" isNavbarButton={true}>
-              Apply Now
-            </Button>
-          </Link>
         </div>
 
         {/* Links */}
@@ -53,10 +48,11 @@ function Footer() {
           {/* Service */}
           <div className="flex flex-col gap-2 text-xs font-semibold [font-variant:small-caps]">
             <p className="text-lg [font-variant:normal]">Service</p>
-            <HashLink to="/what-is-rent-to-own#how-it-works" scroll={el => scrollWithOffset(el)}>
-              How It Works
+            <HashLink to="/what-is-rent-to-own" scroll={el => scrollWithOffset(el)}>
+              Rent to Own
             </HashLink>
-            <Link to="/apply-now">Apply Now</Link>
+            <Link to="/off-market-deals">Sell Your Property</Link>
+            <Link to="/carmel-homes-contracting">Project Management</Link>
           </div>
 
           {/* Company */}
@@ -75,7 +71,7 @@ function Footer() {
           {/* Contact */}
           <div className="flex flex-col items-start gap-2 text-xs font-semibold [font-variant:small-caps]">
             <p className="text-lg [font-variant:normal]">Contact</p>
-            <Link to="tel:+15874172421">+1 (587) 4172421</Link>
+            <Link to="tel:+12267050500">+1 (226) 7050500</Link>
             <Link to="mailto:info@carmelhomesltd.com">info@carmelhomesltd.com</Link>
             <div className="mt-1 lg:mt-2">
               <Button theme="secondary" isNavbarButton={true} onClick={toggleCalendlyDialog}>

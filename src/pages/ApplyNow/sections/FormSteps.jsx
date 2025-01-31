@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
-import FormSlider from "../components/FormSlider";
-import FormButtons from "../components/FormButtons";
+import { useState } from "react";
+// import FormSlider from "../components/FormSlider";
 import FormSubmitted from "../components/FormSubmitted";
 import { formStepDetails as details } from "../formStepDetails";
 import { useForm, Controller } from "react-hook-form";
@@ -35,18 +34,18 @@ function FormSteps() {
       "moveInDate": "",
       "preferredProvince": "",
       "preferredCities": "",
-    }
+    },
   });
   const formValues = watch();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [currentStep, isFormSubmitted]);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [currentStep, isFormSubmitted]);
 
   function onSubmit(data, e) {
+    toggleIsFormSubmitted(state => !state);
     console.log("data", data);
     console.log("e", e);
-    toggleIsFormSubmitted(state => !state);
   }
 
   function onError(errors) {
@@ -161,11 +160,11 @@ function FormSteps() {
         {step.inputs.map((input, index) => {
           let lgLayout = ""; 
           if (input instanceof Array) {return (
-            <div key={index} className="flex flex-col md:flex-row w-full md:justify-between">
+            <div key={index} className="flex flex-col w-full md:justify-between">
               {input.map((field, fieldIndex) => {
                 lgLayout = (step.step == 3 || (step.step == 2 && !field.noLayoutChange)) ? "md:flex-row md:w-full md:justify-between" : "";
                 return (
-                  <label className={`relative flex flex-col ${lgLayout} p-2 ${field.required && errors[field.name] ? "mb-10" : ""} relative w-full md:w-[clamp(18rem,45%,40rem)] justify-start`} key={fieldIndex} htmlFor={field.name}>
+                  <label className={`relative flex flex-col ${lgLayout} p-2 ${field.required && errors[field.name] ? "mb-10" : ""} relative w-full justify-start`} key={fieldIndex} htmlFor={field.name}>
                     <span className={`${lgLayout != "" && "w-full md:w-[clamp(10rem,50%,18rem)]"}`}>{`${field.label}`}<span className="text-2xl font-bold">{field.required ? "*": ""}</span>: </span>
                     {renderInput(field)}
                     {errors[field.name] && (<span className={`absolute top-[100%] text-red-600 text-sm w-full md:w-[clamp(10rem,90%,18rem)]`} role="alert">*{errors[field.name].message}</span>)}
@@ -214,14 +213,15 @@ function FormSteps() {
           ? (
             <>
               {/* Form Page */}
-              <FormSlider currentStep={currentStep} setCurrentStep={setCurrentStep} />
+              {/* <FormSlider currentStep={currentStep} setCurrentStep={setCurrentStep} /> */}
 
               {/* Step Form */}
-              <form className="z-[2]" onSubmit={handleSubmit(onSubmit, onError)}>
+              <form name="apply-now" method="POST" data-netlify="true" className="z-[2]" onSubmit={handleSubmit(onSubmit, onError)}>
+                <input type="hidden" name="form-name" value="apply-now" />
                 {
                   details.map(renderStep)
                 }
-                <FormButtons currentStep={currentStep} setCurrentStep={setCurrentStep} />
+                <input className="bg-brown-primary text-white ml-4 text-[1.5rem] py-[0.5rem] [font-variant:small-caps] px-6 text-sm lg:text-lg font-bold rounded-[10px] cursor-pointer" type="submit" value="Submit" />
               </form>
 
               {/* Required Fields Info Text */}

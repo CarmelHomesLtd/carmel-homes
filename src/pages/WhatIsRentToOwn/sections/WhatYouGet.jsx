@@ -58,11 +58,11 @@ function WhatYouGet() {
   return (
     <section ref={whatYouGetRef} className="flex flex-col items-center justify-between py-[4.5rem] lg:px-20 gap-[4.5rem] text-center bg-gradient-to-br from-brown-accent/30 via-white to-blue-accent/50 overflow-hidden">
       <h2 className="text-[2rem] font-bold">What you get at Carmel Homes</h2>
-      <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-12 lg:gap-20">
+      <div className="flex flex-col md:flex-row justify-center gap-12 lg:gap-20">
         {
           whatYouGetCards.map((card, index) => (
             <div key={index} className={`flex flex-col items-center justify-between gap-5 px-6 py-10 rounded-[1.25rem] max-w-[17rem] md:max-w-xs bg-white shadow-[0px_0px_10px_0px] shadow-brown-gray ${isIntersecting ? card.animation : "opacity-0"}`}  role="img" aria-roledescription={`${card.icon} icon`}>
-              <div className={`${card.img} bg-contain bg-no-repeat w-[4.5rem] h-[4.5rem]`} />
+              <div className={`${card.img} bg-contain bg-no-repeat w-10 h-10`} />
               <p className="text-[1.5rem] font-semibold">{card.title}</p>
               <p className="text-[1rem]">{card.description}</p>
             </div>
