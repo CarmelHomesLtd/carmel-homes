@@ -6,7 +6,9 @@ import beginJourney2Img from "assets/begin-journey-2.webp";
 
 BeginJourney.propTypes = {
   text: PropTypes.string,
-  hideAction: PropTypes.bool
+  hideAction: PropTypes.bool,
+  actionText: PropTypes.string,
+  actionLink: PropTypes.string,
 }
 
 function BeginJourney(props) {
@@ -23,9 +25,9 @@ function BeginJourney(props) {
           }
           {
             !props.hideAction ? (
-          <Link to="/apply-now" className="w-fit">
+          <Link to={props.actionLink || "/apply-now"} className="w-fit">
             <Button theme="primary" className="px-4 py-3 text-[1.5rem] font-bold">
-              Apply Now
+              {props.actionText || "Apply Now"}
             </Button>
           </Link>
 

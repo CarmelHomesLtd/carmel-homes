@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import oldHouse from "./../../../assets/old-house.jpg"
 import Button from "global/Button";
 
@@ -10,9 +11,11 @@ export const HeroSection = () => {
             <h1 className="text-white text-5xl [letter-spacing:0.15rem] font-extrabold">A Quick and Stress-Free Way to Sell Your Property in Ontario, Canada</h1>
             <p className="text-white text-2xl">Get a FREE, no-obligation offer in just 72 hours or less. Simply enter your property details, and we’ll handle the rest!</p>
           </div>
-            <Button theme="primary" attributes={{ type: "button" }} className="w-fit mx-auto shadow-slate-600 shadow-sm" onClick={() => document.getElementById('off-market-form').scrollIntoView({ behavior: 'smooth' })}>
+          <Link to="/off-market-form">
+            <Button theme="primary" attributes={{ type: "button" }} className="w-fit mx-auto shadow-slate-600 shadow-sm">
               Get Your Offer Now
             </Button>
+          </Link>
         </div>
       </section>
 
