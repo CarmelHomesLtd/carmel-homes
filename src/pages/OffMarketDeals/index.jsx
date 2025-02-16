@@ -6,7 +6,7 @@ import { HeroSection } from "./sections/Hero";
 import { HowToSellSection } from "./sections/HowToSell";
 import { ChallengesSection } from "./sections/Challenges";
 import { HowItWorksSection } from "./sections/HowItWorks";
-import FUGFormSteps from "./sections/FUGFormSteps";
+import BeginJourney from "global/BeginJourney";
 
 function OffMarketDeals() {
   // window.dataLayer = window.dataLayer || [];
@@ -28,7 +28,6 @@ function OffMarketDeals() {
         
           gtag('config', 'G-YT7M87W0RE');
         </script> */}
-        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
       </Helmet>
       <HeroSection />
       <HowToSellSection />
@@ -36,7 +35,7 @@ function OffMarketDeals() {
       <HowItWorksSection />
       <section className="flex flex-col w-full gap-20 p-0 sm:p-5 md:p-10 2xl:py-24 px-[clamp(1.25rem,7%,2.5rem)]">
         <Benefits />
-        <FUGFormSteps />
+        <BeginJourney text="Sell your property with us now" actionText="Get Your Offer Now" actionLink="/off-market-form" />
       </section>
     </div>
   )

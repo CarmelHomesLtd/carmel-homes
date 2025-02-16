@@ -16,6 +16,7 @@ import Faq from "./pages/Faq";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import _404 from "./pages/404";
 import "./index.css";
+import OffMarketForm from "./pages/OffMarketForm";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/off-market-deals",
         element: <OffMarketDeals />,
+      },
+      {
+        path: "/off-market-form",
+        element: <OffMarketForm />,
       },
       {
         path: "/faq",
