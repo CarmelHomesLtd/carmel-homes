@@ -19,9 +19,9 @@ function OffMarketBenefits() {
   ]
   
   return (
-    <div className="sticky top-0 flex flex-col w-full lg:w-[clamp(25rem,30%,35rem)] gap-6 py-32">
+    <div className="sticky top-0 hidden lg:flex flex-col w-full lg:w-[clamp(25rem,30%,35rem)] gap-6 py-32">
       {/* <h2 className="text-[2rem] font-bold text-center">Apply Now</h2> */}
-      <div className="hidden lg:flex flex-col gap-5">
+      <div className="flex flex-col gap-5">
         {
           benefits.map((item, index) => (
             <div className="flex gap-2" key={index}>
