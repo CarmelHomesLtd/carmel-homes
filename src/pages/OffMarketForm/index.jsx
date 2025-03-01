@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 
 import FormSteps from "./sections/FUGFormSteps";
+import OffMarketBenefits from "./sections/Benefits";
 
 function OffMarketForm() {
   // window.dataLayer = window.dataLayer || [];
@@ -9,7 +10,7 @@ function OffMarketForm() {
 
   // gtag('config', 'G-YT7M87W0RE');
   return (
-    <div className="flex flex-col lg:flex-row lg:justify-center p-0 sm:p-5 md:p-10 2xl:py-56 bg-[url('applynow/hero.webp')] bg-center bg-cover bg-no-repeat">
+    <div className="flex flex-col lg:flex-row lg:justify-center p-0 sm:p-5 md:p-10 2xl:py-32 bg-[url('applynow/hero.webp')] bg-center bg-cover bg-no-repeat">
       <Helmet>
         <title>Carmel Homes Ltd - Off Market Form</title>
         <meta name="description" content="Apply Now · Response in 24 hours · No commitment · No effect on your credit card rating." />
@@ -20,7 +21,10 @@ function OffMarketForm() {
         <script src="/public/gtag.js"></script>*/}
 
       </Helmet>
-      <FormSteps />
+      <div className="relative flex items-start gap-40 w-full max-w-screen-2xl">
+        <OffMarketBenefits />
+        <FormSteps />
+      </div>
     </div>
   )
 }
