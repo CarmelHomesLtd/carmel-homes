@@ -21,7 +21,7 @@ function OffMarketForm() {
         <script src="/public/gtag.js"></script>*/}
 
       </Helmet>
-      <div className="relative flex items-start gap-40 w-full max-w-screen-2xl">
+      <div className="relative flex items-start lg:gap-40 w-full max-w-screen-2xl">
         <OffMarketBenefits />
         <FormSteps />
       </div>
