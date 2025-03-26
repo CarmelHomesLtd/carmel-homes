@@ -33,9 +33,9 @@ function OffMarketForm() {
             fbq('track', 'PageView');
           `
         }} />
-        <noscript><img height="1" width="1" style="display:none"
+        {/* <noscript><img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=1765365354322951&ev=PageView&noscript=1"
-        /></noscript>
+        /></noscript> */}
       </Helmet>
       <div className="relative flex items-start lg:gap-40 w-full max-w-screen-2xl">
         <OffMarketBenefits />
