@@ -8,7 +8,7 @@ import WhyChooseUs from "./sections/WhyChooseUs";
 import ThreeSteps from "./sections/ThreeSteps";
 import BeginJourney from "global/BeginJourney";
 import Services from "./sections/Services";
-import FormSteps from "./sections/FormSteps";
+// import FormSteps from "./sections/FormSteps";
 import OurProjects from "./sections/Projects";
 
 function CarmelHomesContracting() {
@@ -37,11 +37,11 @@ function CarmelHomesContracting() {
       <WhyChooseUs />
       <ThreeSteps />
       <Services />
-      <div className="py-24">
+      {/* <div className="py-24">
         <FormSteps />
-      </div>
+      </div> */}
       
-      <BeginJourney />
+      <BeginJourney text="Renovate your property with us now" actionText="Get Started" actionLink="/contracting-form" />
     </>
   )
 }

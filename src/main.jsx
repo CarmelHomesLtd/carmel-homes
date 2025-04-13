@@ -12,6 +12,7 @@ import WhatIsRentToOwn from "./pages/WhatIsRentToOwn";
 import OffMarketDeals from "./pages/OffMarketDeals";
 import PartnerWithUs from "./pages/PartnerWithUs";
 import CarmelHomesContracting from "./pages/Contracting";
+import ContractingForm from "./pages/ContractingForm";
 import Faq from "./pages/Faq";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import _404 from "./pages/404";
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/carmel-homes-contracting",
         element: <CarmelHomesContracting />,
+      },
+      {
+        path: "/contracting-form",
+        element: <ContractingForm />,
       },
       {
         path: "/off-market-deals",

@@ -1,4 +1,6 @@
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Button from "global/Button";
 
 function CarmelHomesContracting() {
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -27,6 +29,11 @@ function CarmelHomesContracting() {
         <p>
           Let’s build something incredible together!
         </p>
+                  <Link to="/contracting-form">
+                    <Button theme="secondary" attributes={{ type: "button" }} className="w-fit mx-auto shadow-slate-600 shadow-sm">
+                      Get Started
+                    </Button>
+                  </Link>
       </div>
     </section>
   )
