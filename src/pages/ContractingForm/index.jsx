@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 
 import FormSteps from "./sections/FUGFormSteps";
 import OffMarketBenefits from "./sections/Benefits";
+import PixelTracker from "global/PixelTracker";
 
 function ContractingForm() {
   // window.dataLayer = window.dataLayer || [];
@@ -20,6 +21,7 @@ function ContractingForm() {
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7M87W0RE"></script>
         <script src="/public/gtag.js"></script>*/}
       </Helmet>
+      <PixelTracker />
       <div className="relative flex items-start lg:gap-40 w-full max-w-screen-2xl">
         <OffMarketBenefits />
         <FormSteps />
