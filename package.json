@@ -21,6 +21,7 @@
     "react-router-dom": "^6.13.0",
     "react-router-hash-link": "^2.4.3",
     "react-simple-phone-input": "^5.2.1",
+    "uuid": "^9.0.0",
     "zustand": "^4.3.9"
   },
   "devDependencies": {
