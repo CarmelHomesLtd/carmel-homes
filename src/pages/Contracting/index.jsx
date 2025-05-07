@@ -10,6 +10,7 @@ import BeginJourney from "global/BeginJourney";
 import Services from "./sections/Services";
 // import FormSteps from "./sections/FormSteps";
 import OurProjects from "./sections/Projects";
+import PixelTracker from "global/PixelTracker";
 
 function CarmelHomesContracting() {
   // window.dataLayer = window.dataLayer || [];
@@ -32,6 +33,7 @@ function CarmelHomesContracting() {
           gtag('config', 'G-YT7M87W0RE');
         </script> */}
       </Helmet>
+      <PixelTracker />
       <Contracting />
       <OurProjects />
       <WhyChooseUs />
