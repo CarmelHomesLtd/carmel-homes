@@ -40,9 +40,13 @@ exports.handler = async function (event, context) {
   );
 
   const result = await response.json();
-
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ eventId, ...result }),
-  };
+  if (response.ok) {
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ event_id, ...result }),
+    };
+  } else {
+    console.error(result)
+    return { statusCode: 500 }
+  }
 };
