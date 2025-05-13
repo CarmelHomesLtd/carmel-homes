@@ -33,7 +33,7 @@ function CarmelHomesContracting() {
           gtag('config', 'G-YT7M87W0RE');
         </script> */}
       </Helmet>
-      <PixelTracker />
+{/*       <PixelTracker /> */}
       <Contracting />
       <OurProjects />
       <WhyChooseUs />
