@@ -16,7 +16,7 @@ exports.handler = async function (event, context) {
   }
 
   const body = JSON.parse(event.body);
-  const { first_name, last_name, email, phone, city } = body;
+  const { first_name, last_name, email, phone, city, event_source_url } = body;
   const event_id = uuidv4();
   const user_data = {
     em: sha256(email),
