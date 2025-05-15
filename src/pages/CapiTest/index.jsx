@@ -1,6 +1,6 @@
 export default function CapiTest() {
   return (
-    <form method="POST" action="/.netlify/capi-test">
+    <form method="POST" action="/.netlify/functions/capi-test">
       <label for="fname">First Name</label>
       <input id="fname" name="first_name"></input>
       
