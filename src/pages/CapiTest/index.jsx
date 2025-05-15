@@ -4,11 +4,12 @@ export default function CapiTest() {
 
     const form = e.target;
     const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
 
     try {
       const response = await fetch("/.netlify/functions/capi-test", {
         method: "POST",
-        body: formData,
+        body: JSON.stringify(data),
       });
 
       const result = await response.json(); // or response.text()
