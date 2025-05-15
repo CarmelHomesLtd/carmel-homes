@@ -18,6 +18,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import _404 from "./pages/404";
 import "./index.css";
 import OffMarketForm from "./pages/OffMarketForm";
+import CapiTest from "./pages/CapiTest";
 
 const router = createBrowserRouter([
   {
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
       {
         path: "/privacy-policy",
         element: <PrivacyPolicy />,
+      },
+      {
+        path: "/capi-test",
+        element: <CapiTest />,
       },
     ],
   },
