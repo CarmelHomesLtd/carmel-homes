@@ -1,7 +1,7 @@
 
 const fetch = require("node-fetch");
 const crypto = require("crypto");
-const uuidv4 = require("uuid/v4");
+const { v4: uuidv4 } = require("uuid");
 
 function sha256(value) {
   return crypto.createHash("sha256").update(value.trim().toLowerCase()).digest("hex");
