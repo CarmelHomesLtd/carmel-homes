@@ -1,6 +1,25 @@
 export default function CapiTest() {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/.netlify/functions/capi-test", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json(); // or response.text()
+      console.log("Success:", result);
+    } catch (error) {
+      console.error("Form submission error:", error);
+    }
+  };
+  
   return (
-    <form method="POST" action="/.netlify/functions/capi-test">
+    <form onSubmit={handleSubmit} class="*:block">
       <label for="fname">First Name</label>
       <input id="fname" name="first_name"></input>
       
