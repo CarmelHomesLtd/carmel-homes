@@ -9,7 +9,7 @@ export default function CapiTest() {
     try {
       const response = await fetch("/.netlify/functions/capi-test", {
         method: "POST",
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, event_source_url: window.location.href }),
       });
 
       const result = await response.json(); // or response.text()
