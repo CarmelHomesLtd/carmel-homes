@@ -1,4 +1,4 @@
-export default function capiIntegrationTest() {
+export default function CapiTest() {
   return (
     <form method="POST" action="/.netlify/capi-test">
       <label for="fname">First Name</label>
