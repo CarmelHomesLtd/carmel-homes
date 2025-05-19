@@ -73,7 +73,7 @@ function Navbar() {
               ["Rent to Own", "/what-is-rent-to-own"],
               ["Off Market Deals", "/off-market-deals"],
               ["Partner", "/partner-with-us"],
-              ["Carmel Homes Contracting", "/carmel-homes-contracting"],
+              ["Contracting", "/contracting"],
               ["About Us", "/about-us"],
               ["Faq", "/faq"],
               // ["Apply Now", "/apply-now"],

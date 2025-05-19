@@ -7,7 +7,7 @@ function PixelTracker() {
 
   useEffect(() => {
     if (typeof fbq !== "undefined") {
-      const pathsWithForms = ["/carmel-homes-contracting", "/contracting-form"];
+      const pathsWithForms = ["/contracting", "/contracting-form"];
       if (pathsWithForms.includes(location.pathname)) {
         const eventID = uuidv4();
         

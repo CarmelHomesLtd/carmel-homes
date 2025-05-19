@@ -5,7 +5,7 @@ import Footer from "global/Footer";
 
 function App() {
   return (
-    <div className="font-raleway text-blue-primary">
+    <main className="font-raleway text-blue-primary">
       {/* Navbar */}
       <Navbar />
       {/* Outlet */}
@@ -15,7 +15,7 @@ function App() {
       </div>
       {/* Footer */}
       <Footer />
-    </div>
+    </main>
   )
 }
 

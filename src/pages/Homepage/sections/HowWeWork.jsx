@@ -80,7 +80,7 @@ function HowWeWork() {
             <h2 className="text-lg font-semibold">Carmel Homes Contracting</h2>
             <p className="text-left">At Carmel Homes Contracting, we’re committed to turning your vision into reality. With a focus on exceptional craftsmanship, timely delivery, and clear communication, we ensure that every project meets and exceeds your expectations.</p>
           </div>
-          <Link to="/carmel-homes-contracting">
+          <Link to="/contracting">
             <Button theme="primary" className="text-[1.25rem] font-semibold">
               Let’s build together!
             </Button>

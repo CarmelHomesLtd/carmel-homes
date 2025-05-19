@@ -1,49 +1,33 @@
 //eslint-disable-next-line no-unused-vars
 import React from "react";
-
 import { Helmet } from "react-helmet";
+
+import BeginJourney from "global/BeginJourney";
 
 import Contracting from "./sections/Contracting";
 import WhyChooseUs from "./sections/WhyChooseUs";
 import ThreeSteps from "./sections/ThreeSteps";
-import BeginJourney from "global/BeginJourney";
 import Services from "./sections/Services";
 // import FormSteps from "./sections/FormSteps";
+import FormSteps from "pages/ContractingForm/sections/FUGFormSteps";
 import OurProjects from "./sections/Projects";
-import PixelTracker from "global/PixelTracker";
 
 function CarmelHomesContracting() {
-  // window.dataLayer = window.dataLayer || [];
-  // function gtag(){dataLayer.push(arguments)}
-  // gtag('js', new Date());
-
-  // gtag('config', 'G-YT7M87W0RE');
   return (
     <>
       <Helmet>
         <title>Carmel Homes Ltd</title>
         <meta name="description" content="Home ownership in a few clicks. Get in touch tell us your story, so that we can get an overview of your challenges and support you." />
-        {/*Google tag (gtag.js)*/}
-        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7M87W0RE"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-YT7M87W0RE');
-        </script> */}
       </Helmet>
-{/*       <PixelTracker /> */}
+
       <Contracting />
-      <OurProjects />
-      <WhyChooseUs />
       <ThreeSteps />
+      <div className="pb-12 pt-6 px-4 scroll-mt-20" id="form"><FormSteps /></div>
       <Services />
-      {/* <div className="py-24">
-        <FormSteps />
-      </div> */}
+      <WhyChooseUs />
+      <OurProjects />
       
-      <BeginJourney text="Renovate your property with us now" actionText="Get Started" actionLink="/contracting-form" />
+      <BeginJourney text="Renovate your property with us now" actionText="Get Started" actionLink="#form" useAnchor={true} />
     </>
   )
 }

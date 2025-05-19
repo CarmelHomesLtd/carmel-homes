@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import Button from "global/Button";
-import carmelPDF from "global/carmel.pdf";
+import carmelPDF from "assets/carmel.pdf";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL("pdfjs-dist/build/pdf.worker.min.js",
-  import.meta.url,).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 function FindOutMore() {
   const [numPages, setNumPages] = useState(11);

@@ -9,6 +9,7 @@ BeginJourney.propTypes = {
   hideAction: PropTypes.bool,
   actionText: PropTypes.string,
   actionLink: PropTypes.string,
+  useAnchor: PropTypes.bool,
 }
 
 function BeginJourney(props) {
@@ -24,14 +25,19 @@ function BeginJourney(props) {
             )
           }
           {
-            !props.hideAction ? (
-          <Link to={props.actionLink || "/apply-now"} className="w-fit">
-            <Button theme="primary" className="px-4 py-3 text-[1.5rem] font-bold">
-              {props.actionText || "Apply Now"}
-            </Button>
-          </Link>
-
-            ) : null
+            props.hideAction ? null : props.useAnchor ? (
+              <a href={props.actionLink || "apply-now"} className="w-fit">
+                <Button theme="primary" className="px-4 py-3 text-[1.5rem] font-bold">
+                  {props.actionText || "Apply Now"}
+                </Button>
+              </a>
+            ) : (
+              <Link to={props.actionLink || "/apply-now"} className="w-fit">
+                <Button theme="primary" className="px-4 py-3 text-[1.5rem] font-bold">
+                  {props.actionText || "Apply Now"}
+                </Button>
+              </Link>
+            )
           }
         </div>
         <div className="w-full lg:w-[50%] max-w-[35rem] h-[50%] lg:h-full flex flex-col items-center justify-center lg:grow-[2]">
