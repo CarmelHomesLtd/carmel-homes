@@ -47,9 +47,9 @@ function OurProjects() {
       <div className="container mx-auto px-5 md:px-0">
         <h2 className="text-[1.75rem] text-center font-bold">Our Projects</h2>
       </div>
-      <div className="relative w-7/10 mx-auto overflow-hidden rounded-xl">
+      <div className="relative w-7/10 md:w-[486px] mx-auto overflow-hidden rounded-xl">
         <div
-          className="flex w-full transition-transform duration-700 h-[70dvh] md:max-h-[900px]"
+          className="flex w-full transition-transform duration-700 h-[75dvh] md:max-h-[735px]"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {projects.map((image, index) => (
@@ -58,7 +58,7 @@ function OurProjects() {
                 src={image.img}
                 alt={`Slide ${index}`}
                 height={735} width={548}
-                className="w-full h-full object-center object-cover hover:filter-none transition delay-200 ease-out"
+                className="w-full h-full object-top object-cover hover:filter-none transition delay-200 ease-out"
               />
             </div>
           ))}
