@@ -22,12 +22,12 @@ function CarmelHomesContracting() {
 
       <Contracting />
       <ThreeSteps />
-      <div className="pb-12 pt-6 px-4 scroll-mt-20" id="contracting-form"><FormSteps /></div>
+      <div className="pb-12 pt-6 px-4 scroll-mt-20" id="form"><FormSteps /></div>
       <Services />
       <WhyChooseUs />
       <OurProjects />
       
-      <BeginJourney text="Renovate your property with us now" actionText="Get Started" actionLink="#contracting-form" useAnchor={true} />
+      <BeginJourney text="Renovate your property with us now" actionText="Get Started" actionLink="#form" useAnchor={true} />
     </>
   )
 }

@@ -52,7 +52,7 @@ function Footer() {
               Rent to Own
             </HashLink>
             <Link to="/off-market-deals">Sell Your Property</Link>
-            <Link to="/carmel-homes-contracting">Project Management</Link>
+            <Link to="/contracting">Project Management</Link>
           </div>
 
           {/* Company */}

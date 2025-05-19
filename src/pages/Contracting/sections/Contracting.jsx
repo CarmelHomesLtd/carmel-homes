@@ -29,7 +29,7 @@ function CarmelHomesContracting() {
         <p>
           Let’s build something incredible together!
         </p>
-          <a href="#contracting-form">
+          <a href="#form">
             <Button theme="secondary" attributes={{ type: "button" }} className="w-fit mx-auto shadow-slate-600 shadow-sm">
               Get Started
             </Button>
