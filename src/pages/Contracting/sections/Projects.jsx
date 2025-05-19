@@ -58,7 +58,7 @@ function OurProjects() {
                 src={image.img}
                 alt={`Slide ${index}`}
                 height={735} width={548}
-                className="w-full h-full object-top object-cover hover:filter-none transition delay-200 ease-out"
+                className="w-full h-full object-center object-cover hover:filter-none transition delay-200 ease-out"
               />
             </div>
           ))}
